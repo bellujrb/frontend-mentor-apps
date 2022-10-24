@@ -1,7 +1,11 @@
+import { useContext } from 'react';
 import { View, Text, Image} from 'react-native';
 import { StyleSheet } from 'react-native';
+import { GamerContext } from '../../../Global/GamerContext'
 
 const Header = () => {
+
+    const context = useContext(GamerContext);
 
     const styles = StyleSheet.create({
         header:{
@@ -53,18 +57,18 @@ const Header = () => {
     })
 
     return (
-        <View style={styles.header}>
-            <View style={styles.score}>
-                <Image
-                    source={require('../../../Images/logo.png')}
-                    style={styles.img}
-                />
-                <View style={styles.score2}>
-                    <Text style={styles.textscore}>Score</Text>
-                    <Text style={styles.numberscore}>12</Text>
+            <View style={styles.header}>
+                <View style={styles.score}>
+                    <Image
+                        source={require('../../../Images/logo.png')}
+                        style={styles.img}
+                    />
+                    <View style={styles.score2}>
+                        <Text style={styles.textscore}>Score</Text>
+                        <Text style={styles.numberscore}>{context.points}</Text>
+                    </View>
                 </View>
             </View>
-        </View>
     )
 }
 

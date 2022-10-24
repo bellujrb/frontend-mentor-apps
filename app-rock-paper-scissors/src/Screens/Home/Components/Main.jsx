@@ -1,7 +1,7 @@
 import { View, Text, Image, TouchableOpacity} from 'react-native';
 import { StyleSheet } from 'react-native';
 
-const Main = () => {
+const Main = ({buttonPaper}) => {
 
     const dev = () =>{
         alert("SYSTEM IN DEVELOPMENT")
@@ -37,7 +37,7 @@ const Main = () => {
     return (
         <View style={styles.main}>
             <View style={styles.game}>
-                <TouchableOpacity onPress={dev} style={styles.img}>
+                <TouchableOpacity onPress={ buttonPaper } style={styles.img}>
                     <Image
                         source={require('../../../Images/paper.png')}
                     />

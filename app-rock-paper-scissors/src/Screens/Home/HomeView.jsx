@@ -3,7 +3,7 @@ import Header from './Components/Header';
 import Main from './Components/Main';
 import Footer from './Components/Footer'
 
-const HomeView = ({ styles }) => {
+const HomeView = ({ styles, buttonPaper }) => {
 
     return (
         <View style={styles.container}>
