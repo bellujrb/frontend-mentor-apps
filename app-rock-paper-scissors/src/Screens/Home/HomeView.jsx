@@ -3,12 +3,16 @@ import Header from './Components/Header';
 import Main from './Components/Main';
 import Footer from './Components/Footer'
 
-const HomeView = ({ styles, buttonPaper }) => {
+const HomeView = ({ styles, buttonPaper, buttonScissors, buttonRock }) => {
 
     return (
         <View style={styles.container}>
             <Header/>
-            <Main/>
+            <Main buttonPaper={buttonPaper}
+            buttonScissors={buttonScissors}
+            buttonRock={buttonRock}
+            
+            />
             <Footer/>
         </View>
     )

@@ -1,11 +1,7 @@
 import { View, Text, Image, TouchableOpacity} from 'react-native';
 import { StyleSheet } from 'react-native';
 
-const Main = ({buttonPaper}) => {
-
-    const dev = () =>{
-        alert("SYSTEM IN DEVELOPMENT")
-    }
+const Main = ({ buttonPaper, buttonScissors, buttonRock }) => {
 
     const styles = StyleSheet.create({
         main:{
@@ -42,7 +38,7 @@ const Main = ({buttonPaper}) => {
                         source={require('../../../Images/paper.png')}
                     />
                 </TouchableOpacity>  
-                <TouchableOpacity onPress={dev} style={styles.img2}>              
+                <TouchableOpacity onPress={ buttonScissors } style={styles.img2}>              
                     <Image
                         source={require('../../../Images/scissors.png')}
                     />
@@ -53,7 +49,7 @@ const Main = ({buttonPaper}) => {
                         style={styles.triangle}
                     />
             <View>
-                <TouchableOpacity onPress={dev} style={styles.img3}>
+                <TouchableOpacity onPress={ buttonRock } style={styles.img3}>
                     <Image
                             source={require('../../../Images/rock.png')}
                         />

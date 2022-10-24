@@ -12,6 +12,16 @@ const HomeController = () => {
         alert("SELECTED PAPER")
     }
 
+    const buttonScissors = () => {
+        context?.setPlay1("Scissors")
+        alert("SELECTED SCISSORS")
+    }
+
+    const buttonRock = () => {
+        context?.setPlay1("Rock")
+        alert("SELECTED ROCK")
+    }
+
     useEffect(() => {
         if ((context?.play1 != null) && (context?.play2 != null)) {
             alert("JOGO COMECOU")
@@ -33,6 +43,8 @@ const HomeController = () => {
             <HomeView
             styles={styles}
             buttonPaper={buttonPaper}
+            buttonScissors={buttonScissors}
+            buttonRock={buttonRock}
 
             values={values}
             />
