@@ -13,6 +13,6 @@ This repository was created to show my challenges proposed by [Frontend Mentors]
 <h1> Challenges Met </h1>
 <p> The challenges are all being redone <p/>
 
-|Challenger | Technologies|
-|---|---|
-|  [Rock, Paper and Scissons](https://github.com/belluzzojr/frontend-mentor-apps/tree/main/app-rock-paper-scissors) | JS, REACT NATIVE |
+|Challenger | Technologies | Status |
+|---|---|---|
+|  [Rock, Paper and Scissons](https://github.com/belluzzojr/frontend-mentor-apps/tree/main/app-rock-paper-scissors) | JS, REACT NATIVE | 65% concluded
