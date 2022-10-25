@@ -11,7 +11,7 @@ import { GamerContext, GamerContextProvider } from '../../Global/GamerContext'
 
     useEffect(() => {
         if (context.play1 != null && context.play2 != null) {
-            alert("JOGO COMECOU!");
+            alert("START GAME!");
         } 
     }, [context])
 
