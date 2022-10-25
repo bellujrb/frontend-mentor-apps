@@ -1,7 +1,7 @@
 import { View, Text, Image, TouchableOpacity} from 'react-native';
 import { StyleSheet } from 'react-native';
 
-const Main = ({ buttonPaper, buttonScissors, buttonRock }) => {
+const Main = ({ buttonPaper, buttonScissors, buttonRock, devResults }) => {
 
     const styles = StyleSheet.create({
         main:{

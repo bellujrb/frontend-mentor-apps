@@ -13,11 +13,15 @@ export const GamerContextProvider = (props) => {
     const [winner, setWinner] = useState('');
     const [loser, setLoser] = useState('');
 
+    const [number, setNumber] = useState(1);
+
     return (
         <GamerContext.Provider
         value={{
             points,
             setPoints,
+            number,
+            setNumber,
             play1,
             setPlay1,
             play2,
@@ -25,7 +29,7 @@ export const GamerContextProvider = (props) => {
             winner,
             setWinner,
             loser,
-            setLoser
+            setLoser,
         }}
         >
             {props.children}
