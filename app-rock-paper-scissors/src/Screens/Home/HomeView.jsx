@@ -6,15 +6,15 @@ import Footer from './Components/Footer'
 const HomeView = ({ styles, buttonPaper, buttonScissors, buttonRock, devResults }) => {
 
     return (
-        <View style={styles.container}>
-            <Header/>
-            <Main buttonPaper={buttonPaper}
-            buttonScissors={buttonScissors}
-            buttonRock={buttonRock}
-            devResults={devResults}
-            />
-            <Footer/>
-        </View>
+            <View style={styles.container}>
+                <Header/>
+                <Main buttonPaper={buttonPaper}
+                buttonScissors={buttonScissors}
+                buttonRock={buttonRock}
+                devResults={devResults}
+                />
+                <Footer/>
+            </View>
     )
 }
 

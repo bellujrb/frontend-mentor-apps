@@ -42,7 +42,6 @@ import { GamerContext, GamerContextProvider } from '../../Global/GamerContext'
     }
 
     const buttonRock = () => {
-        context.setNumber(context.number + 1)
 
         if (context.play1 == null && context.number == 1){
             context.setPlay1("Rock")
@@ -51,12 +50,10 @@ import { GamerContext, GamerContextProvider } from '../../Global/GamerContext'
         if (context.play2 == null && context.number ==2){
             context.setPlay2("Rock")
         }
+
+        context.setNumber(context.number + 1)
     }
 
-    const devResults = () =>{
-        alert(context.play1)
-        alert(context.play2)
-    }
 
     const styles = StyleSheet.create({
         container: {
@@ -74,9 +71,8 @@ import { GamerContext, GamerContextProvider } from '../../Global/GamerContext'
             buttonRock={buttonRock}
             values={values}
 
-            devResults={devResults}
         />
-)
+    )
 }
 
 const ContextRun= () => {
