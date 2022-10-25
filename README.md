@@ -8,11 +8,11 @@ This repository was created to show my challenges proposed by [Frontend Mentors]
 
 <h1> About </h1>
 
-<p>Frontend mentor aims to improve frontend skills by creating real projects, solving HTML, CSS and JavaScript challenges while working with professional projects.</p>
+<p>Frontend mentor aims to improve frontend skills by creating real projects, solving JS, REACT NATIVE challenges while working with professional projects.</p>
 
 <h1> Challenges Met </h1>
 <p> The challenges are all being redone <p/>
 
 |Challenger | Technologies|
 |---|---|
-|  [Rock, Paper and Scissons](https://github.com/belluzzojr) | JS, REACT NATIVE |
+|  [Rock, Paper and Scissons](https://github.com/belluzzojr/frontend-mentor-apps/tree/main/app-rock-paper-scissors) | JS, REACT NATIVE |
