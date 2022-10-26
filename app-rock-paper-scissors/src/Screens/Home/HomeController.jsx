@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext } from 'react'
 import HomeView from './HomeView'
 import { StyleSheet } from 'react-native'
 import { GamerContext, GamerContextProvider } from '../../Global/GamerContext'
+import { useNavigation } from '@react-navigation/native'
 
     const HomeController = () => {
 
@@ -9,9 +10,11 @@ import { GamerContext, GamerContextProvider } from '../../Global/GamerContext'
 
     const values = ['Paper', 'Scissors', 'Rock']
 
+    const navigation = useNavigation()
+
     useEffect(() => {
         if (context.play1 != null && context.play2 != null) {
-            alert("START GAME!");
+            navigation.navigate('PLAYING')
         } 
     }, [context])
 
@@ -75,12 +78,4 @@ import { GamerContext, GamerContextProvider } from '../../Global/GamerContext'
     )
 }
 
-const ContextRun= () => {
-    return (
-        <GamerContextProvider>
-            <HomeController />
-        </GamerContextProvider>
-    )
-}
-
-export default ContextRun
+export default HomeController;

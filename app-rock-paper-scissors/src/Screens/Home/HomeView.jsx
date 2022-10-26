@@ -1,7 +1,7 @@
 import { View } from 'react-native';
-import Header from './Components/Header';
-import Main from './Components/Main';
-import Footer from './Components/Footer'
+import Header from '../Components/Header';
+import Main from '../Components/Main';
+import Footer from '../Components/Footer'
 
 const HomeView = ({ styles, buttonPaper, buttonScissors, buttonRock, devResults }) => {
 

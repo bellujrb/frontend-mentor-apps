@@ -93,35 +93,35 @@ const Footer = () => {
                     <Text style={styles.modaltext}>RULES</Text>
                         <View style={styles.linerules}>
                             <Image
-                                source={require('../../../Images/Rules/paper.png')}
+                                source={require('../../Images/Rules/paper.png')}
                                 style={styles.rulesimg1}
                             />
                             <Image
-                                source={require('../../../Images/Rules/arrow.png')}
+                                source={require('../../Images/Rules/arrow.png')}
                                 style={styles.rulesimg2}
                             />
                             <Image
-                                source={require('../../../Images/Rules/scissors.png')}
+                                source={require('../../Images/Rules/scissors.png')}
                                 style={styles.rulesimg3}
                             />
                         </View>
                         <View style={styles.linerules2}>
                             <Image
-                                source={require('../../../Images/Rules/arrow2.png')}
+                                source={require('../../Images/Rules/arrow2.png')}
                                 style={styles.rulesimg4}
                             />
                             <Image
-                                source={require('../../../Images/Rules/rock.png')}
+                                source={require('../../Images/Rules/rock.png')}
                                 style={styles.rulesimg5}
                             />
                             <Image
-                                source={require('../../../Images/Rules/arrow3.png')}
+                                source={require('../../Images/Rules/arrow3.png')}
                                 style={styles.rulesimg6}
                             />                            
                         </View>
                             <TouchableOpacity onPress={closeModal}>
                                 <Image
-                                    source={require('../../../Images/Rules/close.png')}
+                                    source={require('../../Images/Rules/close.png')}
                                     style={styles.closemodal}
                                 />                  
                             </TouchableOpacity>

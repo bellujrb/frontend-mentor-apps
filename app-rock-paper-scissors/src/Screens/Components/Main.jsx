@@ -35,23 +35,23 @@ const Main = ({ buttonPaper, buttonScissors, buttonRock, devResults }) => {
             <View style={styles.game}>
                 <TouchableOpacity onPress={ buttonPaper } style={styles.img}>
                     <Image
-                        source={require('../../../Images/paper.png')}
+                        source={require('../../Images/paper.png')}
                     />
                 </TouchableOpacity>  
                 <TouchableOpacity onPress={ buttonScissors } style={styles.img2}>              
                     <Image
-                        source={require('../../../Images/scissors.png')}
+                        source={require('../../Images/scissors.png')}
                     />
                 </TouchableOpacity>        
             </View>
                     <Image
-                        source={require('../../../Images/triangle.png')}
+                        source={require('../../Images/triangle.png')}
                         style={styles.triangle}
                     />
             <View>
                 <TouchableOpacity onPress={ buttonRock } style={styles.img3}>
                     <Image
-                            source={require('../../../Images/rock.png')}
+                            source={require('../../Images/rock.png')}
                         />
                 </TouchableOpacity>    
             </View>

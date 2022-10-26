@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { View, Text, Image} from 'react-native';
 import { StyleSheet } from 'react-native';
-import { GamerContext } from '../../../Global/GamerContext'
+import { GamerContext } from '../../Global/GamerContext'
 
 const Header = () => {
 
@@ -60,7 +60,7 @@ const Header = () => {
             <View style={styles.header}>
                 <View style={styles.score}>
                     <Image
-                        source={require('../../../Images/logo.png')}
+                        source={require('../../Images/logo.png')}
                         style={styles.img}
                     />
                     <View style={styles.score2}>
