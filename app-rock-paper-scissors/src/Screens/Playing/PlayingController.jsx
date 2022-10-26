@@ -1,4 +1,4 @@
-import React, { useContext }  from 'react'
+import React, { useContext, useEffect }  from 'react'
 import PlayingView from './PlayingView'
 import { StyleSheet } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
@@ -12,7 +12,6 @@ import { GamerContext } from '../../Global/GamerContext'
 
     const playAgain = () => {
         navigation.navigate('GAME')
-        context.setNumber(1)
         
         context.setPlay1(null)
         context.setPlay2(null)

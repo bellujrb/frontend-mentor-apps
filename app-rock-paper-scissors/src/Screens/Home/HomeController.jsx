@@ -10,51 +10,63 @@ import { useNavigation } from '@react-navigation/native'
 
     const values = ['Paper', 'Scissors', 'Rock']
 
+    const randomPlay = Math.floor(Math.random() * values.length)
+
     const navigation = useNavigation()
 
     useEffect(() => {
+        
         if (context.play1 != null && context.play2 != null) {
             navigation.navigate('PLAYING')
         } 
+
     }, [context])
 
     const buttonPaper = () => {
 
-        if (context.play1 == null && context.number == 1){
+        if (context.play1 == null){
             context.setPlay1("Paper")
         }
-
-        if (context.play2 == null && context.number ==2){
-            context.setPlay2("Paper")
+        
+        if (randomPlay == 0){
+            context.setPlay2("Scissors")
         }
-
-        context.setNumber(context.number + 1)
+        if (randomPlay == 1){
+            context.setPlay2("Rock")
+        } else if (randomPlay == 2){
+            context.setPlay2("Scissors")
+        }
     }
 
     const buttonScissors = () => {
 
-        if (context.play1 == null && context.number == 1){
+        if (context.play1 == null){
             context.setPlay1("Scissors")
         }
 
-        if (context.play2 == null && context.number == 2){
-            context.setPlay2("Scissors")
+        if (randomPlay == 0){
+            context.setPlay2("Rock")
+        } else if (randomPlay == 1){
+            context.setPlay2("Paper")
+        } else if (randomPlay == 2){
+            context.setPlay2("Rock")
         }
-
-        context.setNumber(context.number + 1)
     }
 
     const buttonRock = () => {
 
-        if (context.play1 == null && context.number == 1){
+        if (context.play1 == null){
             context.setPlay1("Rock")
         }
 
-        if (context.play2 == null && context.number ==2){
-            context.setPlay2("Rock")
+        if (randomPlay == 0){
+            context.setPlay2("Paper")
+        } else if (randomPlay == 1){
+            context.setPlay2("Scissors")
+        } else if (randomPlay == 2) {
+            context.setPlay2("Paper")
         }
 
-        context.setNumber(context.number + 1)
     }
 
 

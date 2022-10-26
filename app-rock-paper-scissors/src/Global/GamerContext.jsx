@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { createContext } from 'react';
 
 export const GamerContext = createContext();
 
 export const GamerContextProvider = (props) => {
 
-    const [points, setPoints] = useState(50);
+    const [points, setPoints] = useState("COMING...");
 
     const [play1, setPlay1] = useState(null);
     const [play2, setPlay2] = useState(null);
@@ -13,19 +13,19 @@ export const GamerContextProvider = (props) => {
     const [winner, setWinner] = useState('');
     const [loser, setLoser] = useState('');
 
-    const [number, setNumber] = useState(1);
+    const [message, setMessage] = useState('')
 
     return (
         <GamerContext.Provider
         value={{
             points,
             setPoints,
-            number,
-            setNumber,
             play1,
             setPlay1,
             play2,
             setPlay2,
+            message,
+            setMessage,
             winner,
             setWinner,
             loser,

@@ -47,8 +47,10 @@ const Header = () => {
             color: '#2A45C2'
         },
         numberscore:{
+            marginTop: 6,
+
             fontWeight: '700',
-            fontSize: 32,
+            fontSize: 14,
 
             textAlign: 'center',
 

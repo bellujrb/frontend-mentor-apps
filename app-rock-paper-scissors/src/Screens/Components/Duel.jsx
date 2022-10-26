@@ -1,7 +1,63 @@
+import React, { useContext, useEffect} from 'react'
 import { View, Image, Text, TouchableOpacity } from 'react-native';
 import { StyleSheet } from 'react-native'
+import { GamerContext } from '../../Global/GamerContext'
 
 const Duel = ({ playAgain }) => {
+
+    const context = useContext(GamerContext);
+
+    useEffect(() => {
+
+        if (context.play1 == "Paper" && context.play2 == "Rock"){
+            context.setMessage("YOU WIN")
+        } else if (context.play1 == "Rock" && context.play2 == "Paper"){
+            context.setMessage("YOU LOSER")
+        }
+
+        if (context.play1 == "Rock" && context.play2 == "Scissors"){
+            context.setMessage("YOU WIN")
+        } else if (context.play1 == "Rock" && context.play2 == "Scissors"){
+            context.setMessage("YOU LOSER")
+        } 
+
+        if (context.play1 == "Scissors" && context.play2 == "Paper"){
+            context.setMessage("YOU WIN")
+        } else if (context.play1 == "Scissors" && context.play2 == "Paper"){
+            context.setMessage("YOU LOSER")
+        }
+
+    })
+
+    const getImageSrc = () => {
+            
+        let src;
+
+        if(context.play1 === "Paper"){
+            src=require('../../Images/paper.png')
+        } else if (context.play1 === "Scissors"){
+            src=require('../../Images/scissors.png')
+        } else if (context.play1 === "Rock"){
+            src=require('../../Images/rock.png')
+        }
+
+        return src;
+    }
+
+    const getImageSrc2 = () => {
+            
+        let src;
+
+        if(context.play2 === "Paper"){
+            src=require('../../Images/paper.png')
+        } else if (context.play2 === "Scissors"){
+            src=require('../../Images/scissors.png')
+        } else if (context.play2 === "Rock"){
+            src=require('../../Images/rock.png')
+        }
+
+        return src;
+    }
 
     const styles = StyleSheet.create({
         duel:{
@@ -64,19 +120,19 @@ const Duel = ({ playAgain }) => {
                 <View style={styles.duelx}>
                     <View style={styles.align1}>
                         <Image
-                            source={require('../../Images/rock.png')}
+                            source={getImageSrc()}
                         />
                         <Text style={styles.text}>YOU PICKED</Text>
                     </View>
                     <View style={styles.align2}>
                         <Image
-                            source={require('../../Images/paper.png')}
+                            source={getImageSrc2()}
                         />
-                        <Text style={styles.text}>THE HOUSE PICKED</Text>
+                        <Text style={styles.text}>{context.message}</Text>
                     </View>
                 </View>
                 <View style={styles.results}>
-                    <Text style={styles.resultstext}>YOU LOSER</Text>
+                    <Text style={styles.resultstext}>{context.message}</Text>
                     <TouchableOpacity onPress={playAgain}>
                         <View style={styles.playagain}>
                             <Text style={styles.textpa}>PLAY AGAIN</Text>
