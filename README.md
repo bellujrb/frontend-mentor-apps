@@ -17,3 +17,4 @@ This repository was created to show my challenges proposed by [Frontend Mentors]
 |---|---|---|
 |  [Rock, Paper and Scissons](https://github.com/belluzzojr/frontend-mentor-apps/tree/main/app-rock-paper-scissors) | JS, REACT NATIVE | 100% concluded
 |  [Pod](https://github.com/belluzzojr/frontend-mentor-apps/tree/main/app-pod) | DART, FLUTTER | 100% concluded
+|  [Bank](https://github.com/belluzzojr/frontend-mentor-apps/tree/main/app-bank) | DART, FLUTTER | 100% concluded
