@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 
 class TextTitle extends StatelessWidget {
-  const TextTitle({super.key, required this.text});
+  const TextTitle({super.key, required this.text, this.size = 40});
 
   final String text;
+  final double size;
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
       textAlign: TextAlign.center,
-      style: const TextStyle(
+      style: TextStyle(
         fontFamily: 'Public Sans',
         fontWeight: FontWeight.w300,
-        fontSize: 40,
+        fontSize: size,
         letterSpacing: -0.7,
         color: Color.fromRGBO(47, 49, 77, 100),
       ),

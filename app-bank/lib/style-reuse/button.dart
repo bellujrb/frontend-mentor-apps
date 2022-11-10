@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
-  const Button(
-      {super.key, required this.text, required this.icon, required this.color});
+  const Button({
+    super.key,
+    required this.text,
+    required this.icon,
+    required this.color,
+  });
 
   // ignore: prefer_typing_uninitialized_variables
   final String text;

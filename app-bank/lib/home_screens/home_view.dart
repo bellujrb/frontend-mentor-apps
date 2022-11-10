@@ -67,6 +67,60 @@ class Home extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
+            Image.asset('assets/online.png'),
+            const SizedBox(
+              height: 10,
+            ),
+            const TextTitle(
+              text: 'Online Banking',
+              size: 20,
+            ),
+            const TextSimple(
+              text:
+                  'Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.',
+            ),
+            Image.asset('assets/budgeting.png'),
+            const SizedBox(
+              height: 10,
+            ),
+            const TextTitle(
+              text: 'Simple Budgeting',
+              size: 20,
+            ),
+            const TextSimple(
+              text:
+                  'See exactly where your money goes each month. Receive notifications when you’re close to your hitting limits.',
+            ),
+            Image.asset('assets/onboarding.png'),
+            const SizedBox(
+              height: 10,
+            ),
+            const TextTitle(
+              text: 'Fast Onboarding',
+              size: 20,
+            ),
+            const TextSimple(
+              text:
+                  'We don’t do branches. Open your account in minutes online and start taking control of your finances right away.',
+            ),
+            Image.asset('assets/api.png'),
+            const SizedBox(
+              height: 10,
+            ),
+            const TextTitle(
+              text: 'Open API',
+              size: 20,
+            ),
+            const TextSimple(
+              text:
+                  'Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.',
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: Image.asset(
+                'assets/logo.png',
+              ),
+            ),
           ],
         ),
       ),
